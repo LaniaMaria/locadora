@@ -4,18 +4,24 @@ import java.util.Date;
 
 public class Locacao {
 
+	// falta filme e data de locacao
 	private Usuario usuario;
 	private Date dataLocacao;
 	private Date dataRetorno;
 	private Double valorLocacao;
+	private Filme filme;
 
-	public Locacao(Usuario usuario, Date dataLocacao, Date dataRetorno, Double valorLocacao) {
-		this.usuario = usuario;
-		this.dataLocacao = dataLocacao;
-		this.dataRetorno = dataRetorno;
-		this.valorLocacao = valorLocacao;
-
+	public Locacao () {
+		
 	}
+//	public Locacao(Usuario usuario, Date dataLocacao, Date dataRetorno, Double valorLocacao, Filme filme) {
+//		this.usuario = usuario;
+//		this.dataLocacao = dataLocacao;
+//		this.dataRetorno = dataRetorno;
+//		this.valorLocacao = valorLocacao;
+//		this.filme = filme;
+//
+//	}
 
 	public Date getDataLocacao() {
 		return dataLocacao;
@@ -47,6 +53,14 @@ public class Locacao {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
 	}
 
 }
