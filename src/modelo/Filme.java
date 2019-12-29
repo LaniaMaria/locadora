@@ -3,15 +3,15 @@ package modelo;
 public class Filme {
 	
 	private String nome;
-	private int estoque;
+	private int quantidade;
 	private double precoLocacao;
 	
 	
 	public Filme() {}
 	
-	public Filme(String nome, int estoque, double precoLocacao) {
+	public Filme(String nome, int quantidade, double precoLocacao) {
 		this.nome = nome;
-		this.estoque = estoque;
+		this.quantidade = quantidade;
 		this.precoLocacao = precoLocacao;
 				
 	}
@@ -24,11 +24,11 @@ public class Filme {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getEstoque() {
-		return estoque;
+	public int getQuantidade() {
+		return quantidade;
 	}
-	public void setEstoque(int estoque) {
-		this.estoque = estoque;
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
 	}
 	public double getPrecoLocacao() {
 		return precoLocacao;
