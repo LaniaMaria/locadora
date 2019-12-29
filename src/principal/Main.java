@@ -33,7 +33,7 @@ public class Main {
 		Usuario usuario = new Usuario(nomeUsuario);
 		
 		ControleLocacao controle = new ControleLocacao();
-		Locacao locacao = controle.AlugarFilme(usuario, filme);
+		Locacao locacao = controle.alugarFilme(usuario, filme);
 		System.out.println("Nome do filme é: "+locacao.getFilme().getNome());
 		System.out.println("Quantidade de Filmes: "+locacao.getFilme().getQuantidade());
 		System.out.println("Valor Unitario por Filme é: "+locacao.getFilme().getPrecoLocacao());

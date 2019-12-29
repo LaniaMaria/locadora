@@ -7,7 +7,7 @@ import modelo.Usuario;
 public class ControleLocacao {
 
 	
-	public Locacao AlugarFilme(Usuario usuario, Filme filme) {
+	public Locacao alugarFilme(Usuario usuario, Filme filme) {
 		
 		Locacao locacao = new Locacao();
 		
